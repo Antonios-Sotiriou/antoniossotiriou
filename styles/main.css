@@ -1,0 +1,117 @@
+/* Header Area */
+header {
+    grid-area: header;
+}.site-logo {
+    margin: auto auto auto 10px;
+}.site-name1 {
+    font-size: 60px;
+    line-height: 52px;
+}.site-name1 em {
+    font-size: 25px;
+}.site-name2 {
+    font-size: 60px;
+    margin: auto auto auto 60px;
+    line-height: 24px;
+}.site-name2 em {
+    font-size: 25px;
+}.header-options {
+    list-style: none;
+    display: ruby;
+    margin: auto 10px auto auto;
+}.header-option {
+    margin-right: 30px;
+}.header-option a {
+    color: #fff;
+}.header-option a:focus,
+.header-option a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+/* Menu button burger */
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin: auto 30px auto auto;
+    /* border: 3px solid #fff; */
+}
+.menu-btn_burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::before {
+    transform: translateY(-13px);
+}
+.menu-btn_burger::after {
+    transform: translateY(13px);
+}
+/* Menu button burger Animation */
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+/* Right Area section */
+section {
+    grid-area: secondary-area;
+}
+/* Main Area */
+main {
+    grid-area: main-area;
+    display: flex;
+    flex-direction: column;
+}.main-intro {
+    margin: auto auto auto auto;
+}.welcome-msg_header {
+    font-size: 60px;
+}.welcome-msg_content {
+    font-size: 15px;
+}.load-projects {
+    margin: 5px auto auto auto;
+}.load-projects h1 {
+    font-size: 40px;
+    color: #ff9900;
+}
+/* Footer */
+footer {
+    grid-area: footer;
+}.privacy-policy {
+    color: #fff;
+    font-size: 10px;
+}.copywright-info {
+    font-size: 10px;
+    float: right;
+}
+/* Media queries  */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: flex;
+    }
+    .header-options {
+        display: none;
+    }
+}

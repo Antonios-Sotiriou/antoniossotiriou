@@ -1,0 +1,56 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+} 
+a {
+    text-decoration: unset;
+}
+*,
+*::before,
+*::after{box-sizing:border-box;}
+*:focus:not(:focus-visible) { 
+    outline: none; 
+}
+*:focus-visible{
+    outline: none;
+}
+:root {
+    --light-back: rgb(255, 255, 255);
+    --brown-back: rgb(53, 54, 58);
+    --dark-back: rgb(0, 0, 0, 0.91);
+    --user-info-glow: rgb(71, 221, 255);
+    --user-info-dark: rgb(0, 0, 0);
+    --text-dark: rgb(0, 0, 0);
+    --text-light: rgb(255, 255, 255);
+}
+body {
+    display: grid;
+    grid-template-columns: 2.9fr 0.1fr;
+    grid-template-rows: 0.2fr 2.7fr 0.1fr;
+    grid-template-areas: "header header" "main-area secondary-area" "footer footer";
+    background-image: url('../images/space-eclipse.jpg');
+    background-repeat: no-repeat;
+    color: #fff; 
+    height: 98vh;
+    margin: 8px 8px 8px 8px;
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 850px) {
+    body {
+        /* height: 84vh; */
+        background-position: left -710px top 0px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body {
+        /* height: 84vh; */
+        background-position: left -930px top 0px;
+    }
+}
