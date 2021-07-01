@@ -1,4 +1,4 @@
-# antoniossotiriou
+# Antonios-Sotiriou
 ## Personal Website under Development
 
 This is a personal, experimental, professional website.
