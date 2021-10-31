@@ -27,3 +27,4 @@ menuBtn.addEventListener('click', (e) => {
         menuOpen = false;
     }
 })
+

@@ -42,15 +42,39 @@ body {
     margin: 8px 8px 8px 8px;
     overflow-x: hidden;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1400px) {
     body {
-        /* height: 84vh; */
-        background-position: left -710px top 0px;
+        background-position: left -210px top 0px;
     }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1200px) {
     body {
-        /* height: 84vh; */
-        background-position: left -930px top 0px;
+        background-position: left -410px top 0px;
     }
 }
+@media only screen and (max-width: 1000px) {
+    body {
+        background-position: left -610px top 0px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    body {
+        background-position: left -810px top 0px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    body {
+        background-position: left -910px top 0px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    body {
+        background-position: left -1000px top 0px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    body {
+        background-position: left -1050px top 0px;
+    }
+}
+
